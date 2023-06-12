@@ -3,20 +3,18 @@ Automated Plant and Flower Species Classification from Photographs
 
 Project Desc:
 
-The aim of this project in the domain of Botanical Research is to develop an automation solution that can accurately classify plant species from photographs. University X has invested in curating a dataset of sample images, consisting of images from 12 different plant species. The objective is to create a classifier capable of determining the species of a plant based on a given photo.
+Project Description:
 
-The project is divided into three main tasks, with a total score of 30 marks. In the first task, the focus is on importing and understanding the data. The "plant-seedlings-classification.zip" file is extracted, and the images from the training folder are mapped to their respective labels to create a DataFrame. Additionally, a function is written to select and display random images along with their corresponding species labels.
+The project in the domain of Botanical Research aims to develop an automation solution for University X, which is conducting research on understanding the characteristics of plant and plant seedlings at different stages of growth. The university has already invested in curating a dataset of sample images and now requires a classifier capable of determining the species of a plant from a given photo.
 
-In the second task, data preprocessing is performed. The DataFrame is used to create input features (X) and encoded labels (Y). The shape of all the images is standardized, and normalization is applied to ensure consistency and optimal model performance.
+The dataset provided for the project comprises images from 12 different plant species and can be accessed from the source: https://www.kaggle.com/c/plant-seedlings-classification/data.
 
-The third task involves model training. The data is split into training and testing sets, and a new convolutional neural network (CNN) architecture is designed to train the model. The model is trained on the training data and validated on the test data. To evaluate the model's performance, a random image is selected, and both the actual label and predicted label are printed.
+The overall objective of the project is to create a robust classifier that can accurately predict the species of a plant based on a given photograph. The project is divided into three main tasks, with a total score of 30 marks.
 
-In the second part of the project, the focus shifts to flower classification. University X has curated a dataset of images from 17 plant species. The objective is to experiment with various approaches to train an image classifier for predicting the flower species from a given photo.
+In the first task, the focus is on importing and understanding the data. The 'plant-seedlings-classification.zip' file is extracted either manually or using Python, resulting in an unzipped folder. The images from the training folder are mapped to their corresponding labels to create a DataFrame. This DataFrame consists of three columns: the name of the image, the species/class/type of the image, and the actual image itself. Additionally, a function is implemented to randomly select and display a specified number of images along with their corresponding species labels.
 
-The first task involves importing and understanding the data from the "oxflower17" dataset using the tflearn library. The dataset is split into input features (X) and labels (Y), and the number and shape of the images are printed. The count of each class is also determined.
+The second task involves data preprocessing. The DataFrame is used to create the input features (X) and labels (Y). The labels of the images are encoded for numerical representation. Furthermore, the shape of all the images is standardized, ensuring uniformity, and the images are normalized for better model performance.
 
-Next, image exploration and transformation are performed for learning purposes. Random images are displayed, and a specific image is selected and transformed into grayscale format. Filters are applied to sharpen and blur the image, and the differences between the original and transformed images are observed.
+The third task focuses on model training. The data is split into training and testing sets. It is crucial to verify that the shape of the input features (X) is appropriate (No. of images, height, width, No. of channels). If necessary, corrective actions are taken. A new convolutional neural network (CNN) architecture is designed to train the model, taking into account the complexity and variations in plant species. The model is trained using the training data and validated using the test data. To evaluate the model's performance, a random image is selected, and both the actual label and predicted label are printed for comparison.
 
-The final task focuses on model training and tuning. The data is split into training and testing sets, and performance metrics are evaluated for models trained using supervised learning algorithms, neural networks, and basic CNNs. The best performing model is used to predict the class/label of a given image ("Prediction.jpg"), and the predicted label is shared.
-
-Overall, this project aims to leverage machine learning techniques to automate plant and flower species classification based on photographs, facilitating botanical research and analysis.
+Through this project, the aim is to provide University X with an automated solution that can effectively classify plant species from photographs, facilitating their research in understanding the characteristics of plants and plant seedlings.
